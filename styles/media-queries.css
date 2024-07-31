@@ -2,10 +2,6 @@
 
 @media (min-width: 850px) {
   /* HEADER */
-  .index-header {
-    justify-content: center;
-  }
-
   header h1 {
     text-align: center;
   }
@@ -17,10 +13,9 @@
 
   /* INDEX */
   .index-container {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .materia {

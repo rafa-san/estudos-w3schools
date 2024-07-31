@@ -6,6 +6,8 @@ header {
 }
 
 .index-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 70px;
 }
 
@@ -18,6 +20,12 @@ header {
   height: 40vh;
   padding: 8px 16px;
   width: 100%;
+}
+
+.materia p {
+  margin-top: 24px;
+  padding: 8px;
+  text-align: center;
 }
 
 .tag {
