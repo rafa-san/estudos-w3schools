@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+  </head>
+
+  <body>
+    <h1>Exemplo 01</h1>
+    <p>JavaScript consegue alterar o conteúdo de um elemento HTML.</p>
+    <p id="exemplo">Olá, Mundo!</p>
+    <button>Clique aqui!</button>
+
+    <script>
+      const button = document.querySelector('button');
+
+      button.onclick = mudarTexto;
+
+      function mudarTexto() {
+        document.getElementById('exemplo').innerHTML = 'Hello, World!';
+      }
+    </script>
+  </body>
+</html>

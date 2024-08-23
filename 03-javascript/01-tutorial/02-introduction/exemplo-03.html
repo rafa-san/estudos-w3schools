@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+  </head>
+
+  <body>
+    <h1>Exemplo 03</h1>
+
+    <p>JavaScript consegue modificar o estilo de um elemento HTML.</p>
+    <button>Clique aqui!</button>
+
+    <script>
+      const button = document.querySelector('button');
+      button.onclick = mudarEstilo;
+
+      function mudarEstilo() {
+        document.querySelector('p').style.fontSize = '35px'; 
+      }
+    </script>
+  </body>
+</html>

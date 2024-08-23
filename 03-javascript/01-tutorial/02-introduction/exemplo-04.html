@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 04</title>
+    <style>
+      div {
+        margin: 16px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>JS Introdução</h1>
+
+    <p>JavaScript consegue esconder ou revelar elementos HTML.</p>
+    
+    <button id="esconder-img">Esconder</button>
+    <button id="mostrar-img">Mostrar</button>
+    <div>
+      <img src="../../../images/img-tree.png" alt="Imagem de uma coruja em uma árvore rosa">
+    </div>
+
+    <script>
+      const esconderImagem = document.getElementById('esconder-img');
+      const mostrarImagem = document.getElementById('mostrar-img');
+
+      esconderImagem.onclick = esconder;
+      mostrarImagem.onclick = mostrar;
+
+      function esconder() {
+        document.querySelector('img').style.display = 'none';
+      }
+
+      function mostrar() {
+        document.querySelector('img').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
