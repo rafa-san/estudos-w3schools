@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+:root {
+  /* Switch Palette - mycolor.space */
+  --cor1: #f4774b;
+  --cor2: #630000;
+  --cor3: #0962a0;
+  --cor4: #ede9d0;
+
+  --fonte-monospace: 'Courier New', Courier, monospace;
+}
+
 * {
   box-sizing: border-box;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,8 +24,8 @@ a {
 ol {
   display: block;
   list-style-type: none;
-  /* margin-top: 1em;
-  margin-bottom: 1em; */
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   padding-left: 8px;
@@ -25,10 +35,9 @@ ul {
   display: block;
   list-style-position: inside;
   list-style-type: disc;
-  /* margin-top: 1em;
-  margin-bottom: 1em; */
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
   padding-left: 8px;
 }
-
