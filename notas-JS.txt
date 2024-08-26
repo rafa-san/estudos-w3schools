@@ -1,3 +1,62 @@
+JavaScript Programs
+A computer program is a list of "instructions" to be "executed" by a computer.
+
+In a programming language, these programming instructions are called statements.
+
+A JavaScript program is a list of programming statements.
+
+In HTML, JavaScript programs are executed by the web browser.
+
+This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+
+Example:
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+
+
+***
+
+
+JavaScript Values
+
+The JavaScript syntax defines two types of values:
+
+. Fixed values
+. Variable values
+
+> Fixed values are called Literals.
+
+The two most important syntax rules for fixed values are:
+
+1. Numbers are written with or without decimals
+2. Strings are text, written within double or single quotes
+
+> Variable values are called Variables.
+
+
+***
+
+
+A variable declared without a value will have the value undefined.
+
+
+***
+
+
+Types of JavaScript Operators
+There are different types of JavaScript operators:
+
+. Arithmetic Operators
+. Assignment Operators
+. Comparison Operators
+. String Operators
+. Logical Operators
+. Bitwise Operators
+. Ternary Operators
+. Type Operators
+
+
+***
+
 JavaScript Functions and Events
 A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
 
@@ -13,3 +72,110 @@ Writing into an HTML element, using innerHTML.
 Writing into the HTML output using document.write().
 Writing into an alert box, using window.alert().
 Writing into the browser console, using console.log().
+
+
+***
+
+
+JavaScript Programs
+A computer program is a list of "instructions" to be "executed" by a computer.
+
+In a programming language, these programming instructions are called statements.
+
+A JavaScript program is a list of programming statements.
+
+
+***
+
+
+JavaScript Values
+The JavaScript syntax defines two types of values:
+
+Fixed values
+Variable values
+
+Fixed values are called Literals.
+
+Variable values are called Variables.
+
+
+***
+
+
+JavaScript Data Types
+JavaScript variables can hold numbers like 100 and text values like "John Doe".
+
+In programming, text values are called text strings.
+
+JavaScript can handle many types of data, but for now, just think of numbers and strings.
+
+Strings are written inside double or single quotes. Numbers are written without quotes.
+
+If you put a number in quotes, it will be treated as a text string.
+
+
+***
+
+
+Types of JavaScript Operators
+There are different types of JavaScript operators:
+
+Arithmetic Operators
+. Arithmetic Operators are used to perform arithmetic on numbers
+
+Assignment Operators
+. Assignment operators assign values to JavaScript variables
+
+Comparison Operators
+String Operators
+Logical Operators
+Bitwise Operators
+Ternary Operators
+Type Operators
+
+
+***
+
+
+JavaScript has 8 Datatypes
+String
+Number
+Bigint
+Boolean
+Undefined
+Null
+Symbol
+Object
+
+
+***
+
+
+In JavaScript, Objects are King.
+If you Understand Objects, you Understand JavaScript.
+Objects are containers for Properties and Methods.
+
+Properties are named Values.
+
+Methods are Functions stored as Properties.
+
+Properties can be primitive values, functions, or even other objects.
+
+.
+
+JavaScript Primitives
+A primitive value is a value that has no properties or methods.
+
+3.14 is a primitive value
+
+A primitive data type is data that has a primitive value.
+
+JavaScript defines 7 types of primitive data types:
+
+string
+number
+boolean
+null
+undefined
+symbol
+bigint
