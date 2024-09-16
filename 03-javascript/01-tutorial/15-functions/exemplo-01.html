@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 01</h1>
+
+    <p>Call a function which performs a calculation and returns the result:</p>
+
+    <p id="exemplo"></p>
+    <p id="exemplo2"></p>
+
+    <script>
+      function myFunction(n1, n2) {
+        return n1 * n2;
+      }
+
+      let result = myFunction(2, 5);
+
+      document.getElementById('exemplo').innerHTML = result;
+
+      
+      // ou
+      let x = myFunction2(4, 3);
+      document.getElementById("exemplo2").innerHTML = x;
+
+      function myFunction2(a, b) {
+        return a + b;
+      }
+    </script>
+  </body>
+</html>

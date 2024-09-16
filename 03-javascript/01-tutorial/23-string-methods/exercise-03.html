@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exercício 03</h1>
+
+    <p>Use the correct String method to replace the word "Hello" with the word "Welcome".</p>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>
+        let txt = "Hello World";
+        txt = txt.<span class="blank-space"></span>("Hello", "Welcome");
+      </code></pre>
+    </div>
+
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>
+        let txt = "Hello World";
+        txt = txt.replace("Hello", "Welcome");
+      </code></pre>
+    </div>
+    
+    <div class="output">
+      <h2>Output:</h2>
+      <section id="output" class="preview"></section>
+    </div>
+
+    <script>
+      let txt = "Hello World";
+      txt = txt.replace("Hello", "Welcome");
+      document.getElementById("output").innerHTML = txt;
+    </script>
+  </body>
+</html>

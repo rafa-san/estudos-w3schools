@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 01</h1>
+
+    <h2>Using for in... Loop</h2>
+
+    <div class="example">
+      <h2>Script</h2>
+      <pre>
+        <code>
+          const fruits = {Bananas: 300, Oranges: 200, Apples: 500}; 
+
+          let text = "";
+          
+          for (let fruit in fruits) {
+            text += fruit + ": " + fruits[fruit] + "<br>";
+          }
+          
+          document.getElementById("demo").innerHTML = text;
+        </code>
+      </pre>
+    </div>
+
+    <div class="output">
+      <h2>Output</h2>
+      <p id="preview"></p>
+    </div>
+
+    <script>
+      const fruits = {Bananas: 300, Oranges: 200, Apples: 500}; 
+
+      let text = "";
+
+      for (let x in fruits) {
+        text += x + ": " + fruits[x] + "<br>";
+        //text += x + "<br>";
+        //text += fruits[x] + "<br>";
+      }
+
+      document.getElementById("preview").innerHTML = text;
+    </script>
+  </body>
+</html>

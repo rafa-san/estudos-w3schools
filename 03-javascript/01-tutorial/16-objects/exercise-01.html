@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 01</h1>
+
+    <p>Add the following property and value to the person object: country: Norway.</p>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>
+        const person = {
+        firstName: "John",
+        lastName: "Doe",
+        <span class="blank-space"></span>: <span class="blank-space"></span>
+        }
+      </code></pre>
+    </div>
+
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>
+        const person = {
+          firstName: "John",
+          lastName: "Doe",
+          country: "Norway"
+        }
+  
+        document.getElementById("output").innerHTML = `${person.firstName} ${person.lastName} is from ${person.country}`;
+      </code></pre>
+    </div>
+    
+    <div class="output">
+      <h2>Output:</h2>
+      <section id="output" class="preview"></section>
+    </div>
+
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        country: "Norway"
+      }
+
+      document.getElementById("output").innerHTML = `${person.firstName} ${person.lastName} is from ${person.country}`;
+    </script>
+  </body>
+</html>

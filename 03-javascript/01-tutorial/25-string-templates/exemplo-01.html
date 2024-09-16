@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 01</h1>
+
+    <h2>HTML Templates</h2>
+
+    <div class="example">
+      <h2>Script</h2>
+      <pre>
+        <code>
+          const header = "Template Strings";
+          const tags = ["template strings", "javascript", "es6"];
+          let html = `
+          &lt;h2&gt;${header}&lt;/h2&gt;
+          &lt;ul&gt;
+          `
+    
+          for (const x of tags) {
+            html += `&lt;li&gt;${x}&lt;/li&gt;`
+          }
+    
+          html += `&lt;/ul&gt;`;
+    
+          document.getElementById("preview").innerHTML = html;
+        </code>
+      </pre>
+    </div>
+
+    <div class="output">
+      <h2>Output</h2>
+      <p id="preview"></p>
+    </div>
+
+    <script>
+      const header = "Template Strings";
+      const tags = ["template strings", "javascript", "es6"];
+      let html = `
+      <h2>${header}</h2>
+      <ul>
+      `
+
+      for (const x of tags) {
+        html += `<li>${x}</li>`
+      }
+
+      html += `</ul>`;
+
+      document.getElementById("preview").innerHTML = html;
+    </script>
+  </body>
+</html>

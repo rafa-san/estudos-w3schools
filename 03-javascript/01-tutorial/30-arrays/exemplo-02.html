@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 02</h1>
+
+    <h2>Looping Array Elements - Array.forEach() function</h2>
+
+    <div class="example">
+      <h2>Script</h2>
+      <pre>
+        <code>
+
+        </code>
+      </pre>
+    </div>
+
+    <div class="output">
+      <h2>Output</h2>
+      <p id="preview"></p>
+    </div>
+
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let txt = `<ul>`;
+      fruits.forEach(myFunction);
+      txt += `</ul>`;
+
+      function myFunction(value) {
+        txt += `<li>${value}</li>`
+      }
+
+      document.getElementById("preview").innerHTML = txt;
+    </script>
+  </body>
+</html>

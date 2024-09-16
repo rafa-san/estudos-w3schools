@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 02</h1>
+
+    <h2>Object Methods</h2>
+
+    <p>A method is a function definition stored as a property value.</p>
+
+    <p id="exemplo"></p>
+
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function() {
+          return this.firstName + " " + this.lastName;
+        }
+      }
+
+      document.getElementById("exemplo").innerHTML = person.fullName();
+    </script>
+  </body>
+</html>

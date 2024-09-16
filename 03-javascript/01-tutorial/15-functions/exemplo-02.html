@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 02</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 02</h1>
+
+    <p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+
+    <p id="exemplo"></p>
+
+    <script>
+      function toCelsius(f) {
+        return (5/9) * (f-32);
+      }
+
+      let value = toCelsius(77);
+      document.getElementById("exemplo").innerHTML = value;
+
+
+      /*
+      OU...
+      let text = "The temperature is " + toCelsius(77) + " Celsius.";
+      document.getElementById("demo").innerHTML = text;
+
+      function toCelsius(fahrenheit) {
+        return (5/9) * (fahrenheit-32);
+      } 
+      */
+    </script>
+  </body>
+</html>

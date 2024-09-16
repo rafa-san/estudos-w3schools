@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 01</h1>
+
+    <h2>Displaying Properties in a Loop</h2>
+
+    <div class="example">
+      <h2>Script</h2>
+      <pre>
+        <code>
+          // Create an Object
+          const person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+          };
+          
+          // Build a Text
+          let text = "";
+          for (let x in person) {
+            text += person[x] + " ";
+          };
+          
+          // Display the Text
+          document.getElementById("demo").innerHTML = text; 
+        </code>
+      </pre>
+    </div>
+
+    <div class="output">
+      <h2>Output</h2>
+      <p id="preview"></p>
+    </div>
+
+    <script>
+      // Create an Object
+      const person = {
+        name: "John",
+        age: 30,
+        city: "New York"
+      };
+
+      // Build a Text
+      let text = "";
+      for (let x in person) {
+        //text += x + " "; // name age city
+        //text += person // [object Object] [object Object] [object Object]
+        text += person[x] + " ";
+      }
+
+      // Display the Text
+      document.getElementById("preview").innerHTML = text;
+    </script>
+  </body>
+</html>
