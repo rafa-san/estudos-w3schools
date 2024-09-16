@@ -144,15 +144,10 @@ pre {
   padding: 8px;
 }
 
-.starting-point h1,
-.starting-point h2,
-.starting-point h3,
-.starting-point h4,
-.finished-task h1,
-.finished-task h2,
-.finished-task h3,
-.finished-task h4 {
-  color: purple;
+.example {
+  border: 1px solid coral;
+  margin: 24px 0;
+  padding: 8px;
 }
 
 .blank-space {
