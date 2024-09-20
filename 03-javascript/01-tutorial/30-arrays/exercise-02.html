@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exercício 02</h1>
+
+    <p>Change the first item of cars to "Ford".</p>
+
+    <div class="starting-point">
+      <h2>Starting Point</h2>
+      <pre><code>
+        const cars = ["Volvo", "Jeep", "Mercedes"];
+        <span class="blank-space"></span> = "Ford";
+      </code></pre>
+    </div>
+
+    <div class="finished-task">
+      <h2>Finished Task</h2>
+      <pre><code>
+        const cars = ["Volvo", "Jeep", "Mercedes"];
+        cars[0] = "Ford";
+        document.getElementById("output").innerHTML += cars;
+      </code></pre>
+    </div>
+    
+    <div class="output">
+      <h2>Output:</h2>
+      <section id="output" class="preview"></section>
+    </div>
+
+    <script>
+      const cars = ["Volvo", "Jeep", "Mercedes"];
+      document.getElementById("output").innerHTML = cars + `<br /><br />`;
+      cars[0] = "Ford";
+      document.getElementById("output").innerHTML += cars;
+    </script>
+  </body>
+</html>

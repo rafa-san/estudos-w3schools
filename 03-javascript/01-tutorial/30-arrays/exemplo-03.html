@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+    <link rel="stylesheet" href="../../../styles/04-atividades.css" />
+  </head>
+
+  <body>
+    <h1>Exemplo 03</h1>
+
+    <h2>Nested JavaScript Objects and Arrays.</h2>
+
+    <div class="example">
+      <h2>Script</h2>
+      <pre>
+        <code>
+          let x = "";
+          const myObj = {
+            name: "John",
+            age: 30,
+            cars: [
+              {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+              {name:"BMW", models:["320", "X3", "X5"]},
+              {name:"Fiat", models:["500", "Panda"]}
+            ]
+          }
+    
+          for (let i in myObj.cars) {
+            x += "&lt;h2&gt;" + myObj.cars[i].name + "&lt;/h2&gt;";
+            for (let j in myObj.cars[i].models) {
+              x += myObj.cars[i].models[j] + "&lt;br&gt;";
+            }
+          }
+    
+          document.getElementById("preview").innerHTML = x;
+        </code>
+      </pre>
+    </div>
+
+    <div class="output">
+      <h2>Output</h2>
+      <p id="preview"></p>
+    </div>
+
+    <script>
+      let x = "";
+      const myObj = {
+        name: "John",
+        age: 30,
+        cars: [
+          {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+          {name:"BMW", models:["320", "X3", "X5"]},
+          {name:"Fiat", models:["500", "Panda"]}
+        ]
+      }
+
+      for (let i in myObj.cars) {
+        x += "<h2>" + myObj.cars[i].name + "</h2>";
+        for (let j in myObj.cars[i].models) {
+          x += myObj.cars[i].models[j] + "<br>";
+        }
+      }
+
+      document.getElementById("preview").innerHTML = x;
+    </script>
+  </body>
+</html>
