@@ -1,2 +1,2 @@
-> JS Arrays
-  . foEach()
+> JS Array Search
+  . JavaScript Array includes()
