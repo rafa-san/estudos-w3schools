@@ -16,7 +16,16 @@
       <h2>Script</h2>
       <pre>
         <code>
-
+          const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          let txt = `&lt;ul&gt;`;
+          fruits.forEach(myFunction);
+          txt += `&lt;/ul&gt;`;
+    
+          function myFunction(value) {
+            txt += `&lt;li&gt;${value}&lt;/li&gt;`
+          }
+    
+          document.getElementById("preview").innerHTML = txt;
         </code>
       </pre>
     </div>

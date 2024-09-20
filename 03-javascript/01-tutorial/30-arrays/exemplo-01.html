@@ -16,7 +16,17 @@
       <h2>Script</h2>
       <pre>
         <code>
-
+          const fruits = ["Banana", "Orange", "Apple", "Mango"];
+          const fruitsLength = fruits.length;
+          let txt = `&lt;ul&gt;`;
+    
+          for (let i = 0; i &lt; fruitsLength; i++) {
+            txt += `&lt;li&gt;Fruta ${i + 1}: ${fruits[i]}&lt;/li&gt;`
+          }
+    
+          txt += `&lt;/ul&gt;`;
+    
+          document.getElementById("preview").innerHTML = txt;
         </code>
       </pre>
     </div>
